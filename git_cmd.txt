@@ -1,0 +1,46 @@
+# download to local
+git clone "https://**/*.git"
+cd ${dirname}
+
+# local
+git init
+git add filename
+git commit
+git commit -m "MSG"
+
+# branch
+git branch
+git checkout -b newbranch1     ===
+{
+	git branch newbranch1			#建立分支
+	git checkout newbranch1			#切换分支
+}
+## main branch == default branch-->master
+## topic branch
+## merge (topic merge into main)	
+	git checkout master
+	git merge --no-ff newbranch1
+  
+
+# check & ctrl
+git status
+git log 
+git log -p
+git log filename
+git log --pretty=short
+git diff
+git log --graph
+
+# adjust
+## 回溯
+## 消除冲突
+## 调整提交说明
+## 记录压缩
+
+
+# update all
+git push
+
+
+
+
